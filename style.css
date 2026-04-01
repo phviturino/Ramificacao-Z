@@ -15,7 +15,9 @@ header{
             font-weight: bold;
         }
     }
-}@media (min-width: 480px) {
+}
+
+@media (min-width: 480px) {
     header {
         width: 100%;
         display: inline-block;
