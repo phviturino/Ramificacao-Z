@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Verdana, tahoma;
+    font-family: 'lato', sans-serif;
     margin: 0;
     background-color: #ffffff;
     color:#333333;
@@ -61,6 +61,19 @@ header nav a:hover {
     transition: 0.3s; /*transição*/
     margin-top: 10px; /*cria uma margem externa no topo*/
 }
+.historia-jogo {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.historia-jogo h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #1a2a6c;
+}
 .btn-jogar:hover {
     background-color: #3a4685; /*cor de fundo*/
     transform: scale(1.1); /*efeito de zoom*/
@@ -76,4 +89,34 @@ nav {
     font-size: 30px; /*tamanho do icone*/
     user-select: none; /*impede que use o txt*/
     transition: 0.3s; 
+}
+.como-jogar h2 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.controles-container {
+    display: flex; /*modo flexivel*/
+    justify-content: center; /*centraliza*/
+    gap: 80px; /*espaço entre os blocos*/
+    margin-top: 30px;
+}
+.icone-grande {
+    font-size: 100px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+figcaption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #444;
+}
+.controle-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
