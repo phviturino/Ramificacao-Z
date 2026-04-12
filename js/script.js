@@ -38,7 +38,12 @@ window.onload = function() {
             if (idade >= 12) {
                 alert("Ótimo, você será enviado à Capital da Realidade Z!");
             } else {
-                alert("Soldado, você será enviado para a zona sul da Realidade Z!");
+                alert("Soldado, você será enviado para a zona B da Realidade Z!");
+
+                    const boxSocial = document.getElementById('redes-sociais');
+            if (parseInt(idade) < 12 && boxSocial) {
+                boxSocial.style.display = "none";  
+            }
             }
         }
     }
@@ -48,7 +53,7 @@ window.onload = function() {
         elementoSaudacao.textContent = "Bem-vindo soldado " + nomeSalvo + "!";
     }
 
-    // 3. VERIFICAÇÃO DE ANO (Item da Rubrica)
+    // 3. VERIFICAÇÃO DE ANO
     const anoAtual = new Date().getFullYear();
     if (anoAtual === 2026) {
         alert("Ano de Grande Lançamento: Realidade Z está On!");

@@ -330,3 +330,9 @@ nav {
     margin-top: 10px;
     transition: 0.3s;
 }
+.form-escondido {
+    display: none !important;
+}
+.esconder-social {
+    display: none !important;
+}
