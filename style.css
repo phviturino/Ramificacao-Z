@@ -154,6 +154,23 @@ figcaption {
     align-items: center;
 }
 body.modo-escuro {
-    background-color: #0b0e14;
-    color: #ffffff;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.modo-escuro nav a {
+    color: #00d4ff;
+}
+body.modo-escuro section {
+    background-color: #121212;
+    border: 1px solid #333;
+}
+body.modo-escuro header {
+    background-color: #121212;
+    border-bottom: 1px solid #333;
+}
+body.modo-escuro .controles-container i {
+    color:#ffffff !important;
+}body.modo-escuro .rodape {
+    background-attachment: #000000;
+    border-top: 1px solid #333;
 }
