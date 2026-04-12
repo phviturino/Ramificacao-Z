@@ -336,3 +336,64 @@ nav {
 .esconder-social {
     display: none !important;
 }
+
+/*sobre*/
+
+.info-jogo {
+    background: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+    border: 2px solid #00d4ff;      /* Borda azul neon */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;               /* Não deixa o texto espalhado */
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); /* Brilho neon */
+    font-family: 'Courier New', Courier, monospace; /* Fonte estilo código */
+}
+
+.info-jogo p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+.info-jogo strong {
+    color: #00d4ff; /* Deixa os títulos em azul neon */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-jogo span {
+    color: #00ff88; /* Os dados em verde (estilo Matrix/Terminal) */
+    font-weight: bold;
+    float: right; /* Alinha os dados na direita pra ficar organizado */
+}
+
+/* Ajuste no Botão Jogar */
+.btn-jogar {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 15px;
+    background: #00d4ff;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-jogar:hover {
+    background: #00ff88;
+    transform: scale(1.05);
+}
+.logo-grande {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}

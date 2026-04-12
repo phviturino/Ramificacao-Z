@@ -22,7 +22,15 @@ window.onload = function() {
     if (temaSalvo === 'escuro') {
         corpoPagina.classList.add('modo-escuro');
     rotuloTexto.textContent = "Tema Escuro"
-} 
+} const botaoRedefinir = document.getElementById('redefinir');
+
+if (botaoRedefinir) {
+    botaoRedefinir.onclick = function() {
+        // Limpa TUDO para o professor testar do zero
+        localStorage.clear(); 
+        window.location.reload();
+    };
+}
 // --- SAUDAÇÃO E RECRUTAMENTO ---
     const elementoSaudacao = document.getElementById('mensagem-saudacao');
     let nomeSalvo = localStorage.getItem('nomeSoldado');
@@ -47,7 +55,6 @@ window.onload = function() {
             }
         }
     }
-
     // 2. EXIBIÇÃO: Esta parte roda SEMPRE que houver um nome salvo ou novo
     if (elementoSaudacao && nomeSalvo) {
         elementoSaudacao.textContent = "Bem-vindo soldado " + nomeSalvo + "!";
@@ -58,4 +65,21 @@ window.onload = function() {
     if (anoAtual === 2026) {
         alert("Ano de Grande Lançamento: Realidade Z está On!");
     }
+    // --- FICHA TÉCNICA DO JOGO ---
+
+const campoDev = document.getElementById('dev');
+
+if (campoDev) { 
+    const nomeDev = "G14MES";
+    const generoJogo = "Top Down / Ação";
+    const plataformaJogo = "PC";
+    const precoSugerido = "Gratuito";
+    const classifOficial = "12 anos";
+
+    campoDev.textContent = nomeDev;
+    document.getElementById('genero').textContent = generoJogo;
+    document.getElementById('plataforma').textContent = plataformaJogo;
+    document.getElementById('preco').textContent = precoSugerido;
+    document.getElementById('classificacao').textContent = classifOficial;
+}
 };
